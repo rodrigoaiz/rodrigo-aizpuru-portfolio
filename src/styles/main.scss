@@ -5,10 +5,8 @@ Imports
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 **************************************************
 */
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;900&family=Work+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 //@import "~rfs/scss";
-@import"reset.scss";
 @import"colors.scss";
 @import"mixins.scss";
 /*
@@ -154,8 +152,6 @@ MENU REDES
     right: 0.5rem;
     z-index: 100;
     transition: all ease 1s;
-
-    backdrop-filter: blur(1rem);
     ul::after{
       content: "Socials";
       position: absolute;
@@ -227,7 +223,7 @@ FONDO CIRCULOS
 */
 .fondo__circulos{
   transition: all ease 1s;
-  background: linear-gradient(111.6deg,  rgba(193,145,103,0.81) -0.5%, rgba(84,20,80,0.76) 50.9%, rgba(8,52,70,0.85) 100%), url('../assets/noise.svg');
+  background: linear-gradient(111.6deg,  rgba(193,145,103,0.81) -0.5%, rgba(84,20,80,0.76) 50.9%, rgba(8,52,70,0.85) 100%), url('/noise.svg');
   filter: contrast(270%) brightness(100%);
     /*Chrome-specific*/
   @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
@@ -374,17 +370,8 @@ TOP BANNER
         width: min(1020px, 90%);
         min-height: 50vh;
         @include flex(flex, column, nowrap, center, center);
-        background-color:#fff;
         position: relative;
         z-index:5;
-        mix-blend-mode: color-dodge;
-        filter: contrast(70%) brightness(90%);
-        /*Chrome-specific*/
-        @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
-          .topbanner {
-            filter: contrast(290%) brightness(1000%);
-          }
-        }
     }
 }
 
@@ -676,16 +663,16 @@ Nombre neoen
 
   }
   #uno {
-    background-image: url("../assets/nombre-neon1.webp");
+    background-image: url("/nombre-neon1.webp");
   }
    #dos{
-    background-image: url("../assets/nombre-neon2.webp");
+    background-image: url("/nombre-neon2.webp");
     animation-delay: 1s;
         animation: flicker 2s infinite;
 
   }
    #tres{
-    background-image: url("../assets/nombre-neon3.webp");
+    background-image: url("/nombre-neon3.webp");
     animation-delay: 10s;
         animation: neonAnimation 15s infinite;
 
