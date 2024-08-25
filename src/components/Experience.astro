@@ -1,0 +1,57 @@
+---
+interface Experience {
+  title: string;
+  type: string;
+  company: string;
+  date: string;
+  url: string;
+  description: string;
+}
+import { experience } from '@cv';
+import { Icon } from "astro-icon/components";
+---
+<section class="experience max-w-screen-xl mx-auto" id="experience">
+  <h3>Experiencia laboral</h3>
+  <ul class="experience__ul">
+  {
+    experience.map(
+      ({ title, url, type, company, date, description }) => {
+        return (
+          <li class="experience__ul__li">
+            <article class="xl:grid xl:grid-cols-3 xl:gap-10">
+              <header>
+                <div>
+                  <div class="flex justify-between items-center">
+                    <h4>
+                      {title}
+                    </h4>
+                    <a class="bg-yellow rounded-full p-2" href={url} target="_blank">
+                      <Icon class="size-6" name="bi:link-45deg" />
+                    </a>
+                  </div>
+                  <h5>{type}</h5>
+                  <h6>{company}</h6>
+                </div>
+
+                <div>
+                  {date}
+                </div>
+              </header>
+
+              <footer class="xl:col-span-2">
+
+                <ul class="bg-yellow/80 p-5 shadow-lg">
+                  {description.content.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+
+              </footer>
+            </article>
+          </li>
+        );
+      }
+    )
+  }
+  </ul>
+</section>

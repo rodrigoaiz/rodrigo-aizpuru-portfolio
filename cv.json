@@ -1,0 +1,60 @@
+{
+  "experience": [
+    {
+      "title": "Portal Academico CCH",
+      "type": "Diseño y Desarrollo Web",
+      "company": "UNAM - CCH",
+      "description": {
+        "content": [
+          "Desarrollo y producción de recursos web y multimedia para la educación y difusión de la cultura con HTML/CSS/JS.",
+          "Diseño y actualización del sitio “Portal Académico CCH” así como otros sitios relacionados.",
+          "Produción de videos y motion graphics incluyendo modelado 3d.",
+          "Diseño UX y UI, maquetación por medio de HTML5 y aplicación de estilos gráficos en CSS3 para la publicación de Objetos de Aprendizaje.",
+          "Administración de servidores y bases de datos.",
+          "Admnistración de la plataforma de educación en línea MOODLE."
+        ]
+      },
+      "date": "2011-Actual",
+      "image": "work1.jpg",
+      "url": "http://www.portalacademico.cch.unam.mx/"
+    },
+    {
+      "title": "Desarrollo UNILA en línea",
+      "type": "Consultoría de diseño y desarrollo web.",
+      "company": "Universidad Latina",
+      "description": {
+        "content": [
+          "Desarrollo de la plataforma de educación en línea de la Universidad Latina.",
+          "Diseño Web de objetos de aprendizaje en MOODLE."
+        ]
+      },
+      "date": "2018-2019",
+      "image": "work2.jpg",
+      "url": "https://www.unila.edu.mx/"
+    },
+    {
+      "title": "Modelado 3D de recursos educativos",
+      "type": "Modelado 3D",
+      "company": "UNAM - Facultad de Medicina",
+      "description": {
+        "content": [
+          "Modelado 3D de recursos educativos para la enseñanza de la medicina.",
+          "Producción de videos y motion graphics."
+        ]
+      },
+      "date": "2015-2016",
+      "image": "work3.jpg",
+      "url": "https://www.facmed.unam.mx/"
+    },
+    {
+      "title": "Freelance",
+      "type": "Diversos proyectos multimedia",
+      "company": "ONU, Greenpeace, Gobierno de México, INAH, Universidad del Claustro de Sor Juana, HSBC, Fomento Cultural Banamex, GM, Insignialife",
+      "description": {
+        "content": [
+          "Producción audiovisual, coordinación de proyectos y desarrollo de productos web y multimedia para publicidad en redes y televisión, así como para cine documental."
+        ]
+      }
+    }
+  ]
+}

@@ -1,5 +1,9 @@
+---
+import Logo from "@/components/Logo.astro";
+---
+
 <header id="header" class="header">
-  <h1 class="header__h1"><a href="#home" class="a">Rodrigo Aizpuru</a></h1>
+  <a href="/"><Logo class="my-2" /></a>
   <nav class="header__nav">
     <ul class="header__nav__ul">
       <!-- <li class="header__li"><a href="" class="btn a">Home</a></li> -->
@@ -9,3 +13,16 @@
     </ul>
   </nav>
 </header>
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.getElementById('header').classList.add('header-down');
+        document.getElementById('fondo').classList.add('fondo-down');
+      } else {
+        document.getElementById('header').classList.remove('header-down');
+        document.getElementById('fondo').classList.remove('fondo-down');
+      }
+  });
+});
+</script>

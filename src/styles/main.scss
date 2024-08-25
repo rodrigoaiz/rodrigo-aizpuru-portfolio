@@ -18,6 +18,13 @@ ROOT
 */
 :root{
   --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.55);
+  --rojo: 202 22 43;
+  --rojo-tenue: 114 34 44;
+  --amarillo: 255 210 0;
+  --azul:76 118 161;
+  --purpura:133 33 81;
+  --blanco:236 235 243;
+  --negromorado:31 25 65;
 }
 
 $tipo__titulos: 'Frank Ruhl Libre Variable', serif;
@@ -106,16 +113,7 @@ MENU HEADER
 }
 
 .header-down{
-  animation: scale 1.5s both;
 
-@keyframes scale {
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
     max-height: 5rem;
     background-color:$color__base--purpuraA;
@@ -352,19 +350,24 @@ TOP BANNER
     min-height:100vh;
     @include flex(flex, row, nowrap, center, center);
     &__h1{
-      @include parrafo($tipo__titulos, clamp(3rem, 6vw, 7rem), 900, $color__base--purpura);
+      @include parrafo($tipo__titulos, clamp(2.2rem, 3.2vw, 4.3rem), 900, $color__base--purpura);
         text-align: center;
         margin-bottom:0.5em;
+        span{
+          font-weight: 100;
+          display: block;
+          font-size: clamp(1.5rem, 2vw, 2.5rem);
+        }
     }
     &__h2{
-      @include parrafo($tipo__titulos, clamp(1.9rem, 3vw, 3rem), 300, $color__base--purpura);
+      @include parrafo($tipo__titulos, clamp(1.2rem, 2.1vw, 2rem), 300, $color__base--purpura);
         text-align: center;
         margin-bottom: 1em;
     }
     &__p{
       font-family: $tipo__textos;
       text-align: center;
-      font-size: clamp(1rem, 1.2vw, 1.5rem);
+      font-size: clamp(1rem, 1.1vw, 1.2rem);
     }
     &__interior{
         width: min(1020px, 90%);
@@ -1063,4 +1066,67 @@ footer
         text-decoration: none;
       }
     }
+}
+  .logo {
+    font-family: $tipo__titulos;
+    font-size: 2rem;
+  }
+.experience {
+    @include parrafo($tipo__textos, 1rem, 500, $color__base--negromorado);
+    margin-bottom:3rem;
+  &__ul{
+    border-left: 1px solid $color__base--negromorado;
+    list-style: none;
+    counter-reset: item;
+
+
+    &__li{
+      margin-bottom: 2rem;
+      position: relative;
+      counter-increment: item;
+      margin-bottom: 2rem;
+      align-items: center;
+      padding-left: 3rem;
+
+    }
+    &__li::before {
+        position: absolute;
+        left: -0.5rem;
+        background : $color__base--negromorado;
+        border-radius: 100%;
+        min-width: 2rem;
+        min-height: 2rem;
+        top: 1rem;
+        content: "";
+        max-width: 1rem;
+        min-width: 1rem;
+        min-height: 1rem;
+        max-height: 1rem;
+      }
+
+    li:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  h3{
+    @include parrafo($tipo__titulos, 2.5rem, 900, $color__base--negromorado);
+  }
+  footer{
+    ul{
+      list-style: disc;
+      list-style-position: inside;
+      padding: 1rem;
+      margin: 0;
+      @include parrafo($tipo__textos, 1rem, 300, $color__base--negromorado);
+      li{
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+  }
+  h4{
+    @include parrafo($tipo__titulos, 1.5rem, 900, $color__base--negromorado);
+  }
 }

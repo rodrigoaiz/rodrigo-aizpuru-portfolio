@@ -16,6 +16,7 @@
     "@fontsource-variable/frank-ruhl-libre": "^5.0.22",
     "@fontsource-variable/work-sans": "^5.0.20",
     "@iconify-json/bi": "^1.1.24",
+    "@iconify-json/simple-icons": "^1.1.114",
     "astro": "^4.14.5",
     "astro-icon": "^1.1.1",
     "flowbite": "^2.5.1",

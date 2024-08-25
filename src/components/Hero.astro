@@ -1,9 +1,22 @@
-<section class="seccion topbanner" id="home">
-  <div class="topbanner__interior bg-white/50 backdrop-blur-sm">
-    <div class="topbanner__interior__contenido">
-      <h1 class="topbanner__h1">Rodrigo Aizpuru</h1>
-      <h2 class="topbanner__h2">Online Portfolio</h2>
-      <p class="topbanner__p">Graphic Designer | Front-End Developer & Desinger | Motion Graphics</p>
+---
+import Herobuttons from "@/components/Herobuttons.astro";
+---
+<section class="w-full h-lvh flex items-center justify-center" id="home">
+  <div class="bg-white/50 backdrop-blur-sm max-w-screen-lg">
+    <div class="grid grid-cols-3 p-4">
+      <div class="flex flex-col items-center justify-center col-span-1">
+        <img src="/me_avatar_low.webp" class="size-40 rounded-full" alt="Yo">
+      </div>
+      <div class="topbanner__interior__contenido col-span-2">
+        <h1 class="topbanner__h1"><span>Hola, soy</span> Rodrigo Aizpuru</h1>
+        <h2 class="topbanner__h2">Graphic Designer | Front-End Developer & Desinger | Motion Graphics</h2>
+        <p class="topbanner__p">Soy un Diseñador Web con más de <strong>15 años de experiencia</strong> en la creación de recursos digitales para universidades y empresas a nivel nacional e internacional. Vivo en México, ¡viva México! 🇲🇽.</p>
+      </div>
     </div>
+    <article class="w-full flex justify-around my-4">
+      <Herobuttons icono="bi:envelope-paper-heart" nombre="Conctáctame" href="mailto:contacto@rodrigoaizpuru.com" />
+      <Herobuttons icono="bi:linkedin" nombre="Linkedin" href="https://github.com/rodrigoaiz" />
+      <Herobuttons icono="bi:github" nombre="Github" href="https://github.com/rodrigoaiz" />
+    </article>
   </div>
 </section>

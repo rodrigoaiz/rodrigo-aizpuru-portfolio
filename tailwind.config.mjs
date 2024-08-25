@@ -13,7 +13,13 @@ module.exports = {
     },
 		extend: {
 			colors: {
-			light: 'rgb(var(--honeydew) / <alpha-value>)'
+			light: 'rgb(var(--blanco) / <alpha-value>)',
+      dark: 'rgb(var(--negomorado) / <alpha-value>)',
+      red: 'rgb(var(--rojo) / <alpha-value>)',
+      lightred: 'rgb(var(--rojo-tenue) / <alpha-value>)',
+      yellow: 'rgb(var(--amarillo) / <alpha-value>)',
+      blue: 'rgb(var(--azul) / <alpha-value>)',
+      violet: 'rgb(var(--purpura) / <alpha-value>)'
 		}
 		},
 	},
