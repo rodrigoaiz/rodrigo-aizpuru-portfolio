@@ -8,25 +8,12 @@ import { Icon } from "astro-icon/components";
 ---
 
 <footer class="bg-lightblue mt-10">
-  <div class="container mx-auto text-darkblue">
+  <div class="container mx-auto text-white">
     <div class="flex flex-col md:flex-row justify-around items-center py-10">
       <div class="text-center md:mb-0 md:text-left">
         <div class="w-ful">
           <a href="/"><Logo class="h-10 md:h-14 hover:scale-110 transition-all ease-in-out" /></a>
         </div>
-      </div>
-      <div class="text-center md:mb-0">
-        <ul>
-          {
-            footer.map((menu) => (
-              <li class="m-3 inline-block">
-                <a class="hover:text-blue transition-all" href={menu.url}>
-                  {menu.name}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
       </div>
       <div class="text-center lg:mb-0 lg:mt-0 lg:text-right">
         <ul>
@@ -49,8 +36,8 @@ import { Icon } from "astro-icon/components";
       </div>
     </div>
   </div>
-  <div class="border-t border-border py-7 border-dark">
-    <div class="container text-center text-dark mx-auto">
+  <div class="border-t border-border py-7 border-blue">
+    <div class="container text-center text-white mx-auto">
       <p set:html={config.params.copyright} />
     </div>
   </div>

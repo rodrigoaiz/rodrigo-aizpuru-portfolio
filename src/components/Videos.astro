@@ -1,0 +1,40 @@
+---
+interface Videos {
+  title: string;
+  image: string;
+  url: string;
+  client: string;
+}
+import { videos } from '@cv';
+import { Icon } from "astro-icon/components";
+---
+<section class="videos max-w-screen-2xl mx-auto p-2" id="videos">
+  <h3 class="uppercase text-pretty">Producción audiovisual</h3>
+  <div class="grid md:grid-cols-5 gap-4">
+    {
+      videos.map(
+        ({ title, image, url, client }) => {
+          return (
+            <a href={url} target="_blank">
+              <article class="proyects__card rounded-xl overflow-hidden border border-slate-900 shadow-xl group relative h-full" >
+                <aside class="overflow-hidden">
+                  <img
+                    class="transition-scale  bottom-0 left-0 top-0 -z-10 h-full object-cover opacity-90 duration-1000 ease-in-out
+                  group-hover:scale-110 md:w-full"
+                    src={image}
+                    alt={title}
+                  />
+                </aside>
+                <div class="col-span-2 p-2">
+                  <header>
+                    <h2>{title}</h2>
+                  </header>
+                </div>
+              </article>
+            </a>
+          );
+        }
+      )
+    }
+  </div>
+</section>

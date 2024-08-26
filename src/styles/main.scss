@@ -1193,3 +1193,37 @@ proyects
 
   }
 }
+
+/*
+**************************************************
+––––––––––––––––––––––––––––––––––––––––––––––––––
+videos
+––––––––––––––––––––––––––––––––––––––––––––––––––
+**************************************************
+*/
+
+.videos {
+  &__card{
+    background-color: $color__base--negro;
+  }
+   h3{
+    @include parrafo($tipo__titulos, clamp(1.9em, 5vw, 2.5em), 900, $color__blanco);
+    margin-bottom: 0.5rem;
+  }
+  header{
+    h2 {
+      @include parrafo($tipo__titulos, 1.2rem, 900, $color__blanco);
+      text-transform: uppercase;
+    }
+    h4{
+      @include parrafo($tipo__titulos, 1rem, 400, $color__blanco);
+      margin-bottom: 0.5rem;
+    }
+  }
+  footer{
+    p{
+      @include parrafo($tipo__textos, 1rem, 400, $color__blanco);
+    }
+
+  }
+}

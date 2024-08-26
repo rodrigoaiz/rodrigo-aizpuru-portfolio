@@ -1,7 +1,7 @@
 {
   "experience": [
     {
-      "title": "Portal Academico CCH",
+      "title": "Portal Académico CCH",
       "type": "Diseño y Desarrollo Web",
       "company": "UNAM - CCH",
       "description": {
@@ -11,10 +11,10 @@
           "Produción de videos y motion graphics incluyendo modelado 3d.",
           "Diseño UX y UI, maquetación por medio de HTML5 y aplicación de estilos gráficos en CSS3 para la publicación de Objetos de Aprendizaje.",
           "Administración de servidores y bases de datos.",
-          "Admnistración de la plataforma de educación en línea MOODLE."
+          "Administración de la plataforma de educación en línea MOODLE."
         ]
       },
-      "date": "2011-Actual",
+      "date": "2011 - Actual",
       "image": "work1.jpg",
       "url": "http://www.portalacademico.cch.unam.mx/"
     },
@@ -155,7 +155,7 @@
           "icon": "simple-icons:javascript"
         }
       ],
-      "description": "SuMate es un proyecto de la CCH con objetos de aprendizaje para la enseñanza de las matemáticas en bachillerato. El proyecto incluye videos, animaciones, ejercicios interactivos.",
+      "description": "SuMate es un proyecto del CCH con objetos de aprendizaje para la enseñanza de las matemáticas en bachillerato. El proyecto incluye videos, animaciones, ejercicios interactivos.",
       "github": "https://github.com/unampacch/objetos-matematicas/",
       "image": "/works/portada-sumate.webp",
       "url": "https://vercel.com/rodrigoaizs-projects/objetos-matematicas",
@@ -268,7 +268,7 @@
       "slug" : "proyectos/mexico-el-pais-de-las-maravillas"
     },
     {
-      "title": "Tutorial de estragegias de aprendizaje",
+      "title": "Tutorial de estrategias de aprendizaje",
       "client": "UNAM - CCH",
       "skills": [
         {
@@ -288,7 +288,7 @@
           "icon": "simple-icons:bootstrap"
         }
       ],
-      "description": "Tutorial interactivo para la enseñanza de estrategias de aprendizaje principalmente dirigido a alumnos de nuevo ingreso al CCH de la UNAM haciendo enfoque en la enseñanza de su modelo educativo.",
+      "description": "Tutorial interactivo para la enseñanza de estrategias de aprendizaje, principalmente dirigido a alumnos de nuevo ingreso al CCH de la UNAM, enfocado en la enseñanza de su modelo educativo.",
       "image": "/works/portada-tea.webp",
       "url": "https://tutorial.cch.unam.mx/"
     },
@@ -351,14 +351,82 @@
   ],
   "videos": [
     {
-      "title": "Video 1",
-      "description": "Descripción del video 1",
-      "url": "https://www.youtube.com/watch?v=1"
+      "title": "Experimento de Miller y Urey",
+      "client": "UNAM - CCH",
+      "image": "/videos/miller-urey.webp",
+      "url": "https://www.youtube.com/watch?v=WzrOVY_3tUI"
     },
     {
-      "title": "Video 2",
-      "description": "Descripción del video 2",
-      "url": "https://www.youtube.com/watch?v=2"
+      "title": "¿Es posible tener Pensamiento Crítico en esta Posverdad?",
+      "client": "UNAM - CCH",
+      "image": "/videos/pensamiento-critico.webp",
+      "url": "https://www.youtube.com/watch?v=Y0EHyuWDWPI"
+    },
+    {
+      "title": "Maravillas Ocultas: La Biodiversidad de la Ciudad de México",
+      "client": "UNAM - CCH",
+      "image": "/videos/maravillas-ocultas.webp",
+      "url": "https://www.youtube.com/watch?v=NUF_wsDaMKI"
+    },
+    {
+      "title": "Bienvenido al CCH - 2018",
+      "client": "UNAM - CCH",
+      "image": "/videos/bienvenido.webp",
+      "url": "https://www.youtube.com/watch?v=1iiBubpRrzo"
+    },
+    {
+      "title": "Ser parte del CCH",
+      "client": "UNAM - CCH",
+      "image": "/videos/ser-parte.webp",
+      "url": "https://www.youtube.com/watch?v=-kONd6G-ckU"
+    },
+    {
+      "title": "Profesor, estos son los Objetos de Aprendizaje ",
+      "client": "UNAM - CCH",
+      "image": "/videos/objetos-aprendizaje.webp",
+      "url": "https://www.youtube.com/watch?v=zcbMBRdCXgE"
+    },
+    {
+      "title": "Convocatoria Publica en el Portal",
+      "client": "UNAM - CCH",
+      "image": "/videos/convocatoria.webp",
+      "url": "https://www.youtube.com/watch?v=kt9gJuOtYXo"
+    },
+    {
+      "title": "Herramientas TIC",
+      "client": "UNAM - CCH",
+      "image": "/videos/herramientas-tic.webp",
+      "url": "https://www.youtube.com/watch?v=Z0Ktx5mCXXc"
+    },
+    {
+      "title": "HAZ ESTO y empieza a DIBUJAR",
+      "client": "UNAM - CCH",
+      "image": "/videos/dibujar.webp",
+      "url": "https://www.youtube.com/watch?v=jz0DbO6rcrc"
+    },
+    {
+      "title": "¿Portal Académico CCH cumple 10 años",
+      "client": "UNAM - CCH",
+      "image": "/videos/10-anos.webp",
+      "url": "https://www.youtube.com/watch?v=p8_ZV3JZ0g8"
+    },
+    {
+      "title": "¿Cómo las relaciones sociales se transforman por la tecnología?",
+      "client": "UNAM - CCH",
+      "image": "/videos/relaciones-sociales.webp",
+      "url": "https://www.youtube.com/watch?v=IUNa5wQTeXE"
+    },
+    {
+      "title": "LO QUE NECESITAS SABER DE LA NUBE",
+      "client": "UNAM - CCH",
+      "image": "/videos/nube.webp",
+      "url": "https://www.youtube.com/watch?v=cQzM5cAQTCQ"
+    },
+    {
+      "title": "LA VERDAD SOBRE el Modelo Educativo",
+      "client": "UNAM - CCH",
+      "image": "/videos/modelo-educativo.webp",
+      "url": "https://www.youtube.com/watch?v=FtXcKXypdwg"
     }
   ]
 }
