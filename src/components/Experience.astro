@@ -11,7 +11,7 @@ import { experience } from '@cv';
 import { Icon } from "astro-icon/components";
 ---
 <section class="experience max-w-screen-xl mx-auto" id="experience">
-  <h3>Experiencia laboral</h3>
+  <h3 class="uppercase text-pretty font-black">Experiencia laboral</h3>
   <ul class="experience__ul">
   {
     experience.map(
@@ -38,7 +38,7 @@ import { Icon } from "astro-icon/components";
                 </div>
               </header>
 
-              <footer class="xl:col-span-2">
+              <footer class="xl:col-span-2 my-2">
 
                 <ul class="bg-yellow/80 p-5 shadow-lg">
                   {description.content.map((item) => (
