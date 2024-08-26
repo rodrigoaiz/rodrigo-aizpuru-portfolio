@@ -151,15 +151,14 @@ MENU REDES
     z-index: 100;
     transition: all ease 1s;
     ul::after{
-      content: "Socials";
+      content: "Contacto";
       position: absolute;
       top: -1.2em;
       left: 0;
       font-family:$tipo__titulos;
       color: $color__blanco;
-      border-bottom: 1px solid $color__blanco;
-      width: 100%;
 
+      width: 100%;
     }
     &__ul{
       margin: 0;
@@ -179,7 +178,7 @@ MENU REDES
 
               }
             }
-            svg{
+            .icon {
                 width:clamp(0.65rem, 1.55rem, 2.25rem);
                 min-height: 1.5em;
                 fill: $color__blanco;

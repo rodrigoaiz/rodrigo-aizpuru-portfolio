@@ -38,11 +38,11 @@ import { Icon } from "astro-icon/components";
                 </header>
                 <footer>
                   <p>{description}</p>
-                  <div class="skills flex gap-2 my-2">
+                  <div class="skills flex flex-wrap gap-2 my-2">
                     {skills.map(({ skill, icon}) => {
                       return (
                       <article class="rounded-full flex flex-row items-center justify-center border px-2 gap-1 text-slate-500 bg-slate-200 hover:scale-105  animate-ease text-xs">
-                        <Icon class="size-3" name={icon} /><span class="">{skill}</span>
+                        <Icon class="size-3" name={icon} /><span class="hidden sm:block">{skill}</span>
                       </article>
                               );
                           }
