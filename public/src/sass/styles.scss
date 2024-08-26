@@ -5,10 +5,8 @@ Imports
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 **************************************************
 */
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;900&family=Work+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 //@import "~rfs/scss";
-@import"reset.scss";
 @import"colors.scss";
 @import"mixins.scss";
 /*
@@ -20,13 +18,17 @@ ROOT
 */
 :root{
   --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.55);
+  --rojo: 202 22 43;
+  --rojo-tenue: 114 34 44;
+  --amarillo: 255 210 0;
+  --azul:76 118 161;
+  --purpura:133 33 81;
+  --blanco:236 235 243;
+  --negromorado:31 25 65;
 }
-
 $tipo__titulos: 'Frank Ruhl Libre Variable', serif;
 $tipo__textos: 'Work Sans Variable', sans-serif;
-.fancybox__caption{
-  @include parrafo($tipo__textos, 1em, 400, $color__base--negromorado);
-}
+
 /* main
 .section{
   z-index: 1;

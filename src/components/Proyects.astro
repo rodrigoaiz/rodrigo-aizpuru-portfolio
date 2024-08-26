@@ -1,52 +1,63 @@
 ---
+interface Skills {
+  skill: string;
+  icon: string;
+}
 interface Proyects {
   title: string;
   description: string;
   image: string;
   url: string;
-  github: string;
+  github?: string;
   slug: string;
+  client: string;
 }
 import { proyects } from '@cv';
 import { Icon } from "astro-icon/components";
 ---
-<section class="proyects max-w-screen-xl mx-auto p-2" id="proyects">
+<section class="proyects max-w-screen-2xl mx-auto p-2" id="proyects">
   <h3 class="uppercase text-pretty">Proyectos</h3>
   <div class="grid xl:grid-cols-2 gap-4">
     {
       proyects.map(
-        ({ title, description, image, url, github, slug, skills }) => {
+        ({ title, description, image, url, github, slug, skills, client }) => {
           return (
-            <article class="grid grid-cols-3 gap-5">
-              <aside>
-                <img src={image} class="w-full" alt={title} />
+            <article class="proyects__card grid grid-cols-3 gap-3 rounded-xl overflow-hidden border border-slate-900 shadow-xl group relative pr-2" >
+              <aside class="overflow-hidden">
+                <img
+                  class="transition-scale  bottom-0 left-0 top-0 -z-10 h-full object-cover opacity-90 duration-1000 ease-in-out
+                group-hover:scale-110 md:w-full"
+                  src={image}
+                  alt={title}
+                />
               </aside>
-              <div class="col-span-2">
+              <div class="col-span-2 py-2">
                 <header>
-                <h2>{title}</h2>
+                  <h2>{title}</h2>
+                  <h4>{client}</h4>
                 </header>
                 <footer>
-                <div class="skills flex gap-2 mt-2">
-                  {skills.map(({ skill, icon}: { skill: string, icon: string }) => {
-                    return (
-                    <article class="rounded-full flex flex-row items-center justify-center border border-dark px-3 xl:py-1 gap-1 text-dark hover:scale-105  animate-ease">
-                      <Icon class="xl:size-5" name={icon} /><span>{skill}</span>
-                    </article>
-                            );
-                        }
-                      )
-                    }
-                </div>
                   <p>{description}</p>
-                  <div class="flex gap-2">
+                  <div class="skills flex gap-2 my-2">
+                    {skills.map(({ skill, icon}) => {
+                      return (
+                      <article class="rounded-full flex flex-row items-center justify-center border px-2 gap-1 text-slate-500 bg-slate-200 hover:scale-105  animate-ease text-xs">
+                        <Icon class="size-3" name={icon} /><span class="">{skill}</span>
+                      </article>
+                              );
+                          }
+                        )
+                      }
+                  </div>
+                  <div class="flex gap-2 my-2">
                     {url && (
-                      <a class="bg-yellow rounded-full p-2 text-slate-900" href={url} target="_blank">
-                        <Icon class="size-6" name="bi:link-45deg" />
+                      <a class="bg-yellow rounded-full p-1 hover:scale-105 ease-in-out text-slate-900" href={url} target="_blank">
+                        <Icon class="size-5" name="bi:link-45deg" />
                       </a>
                     )}
-                    {url && (
-                      <a class="bg-yellow rounded-full p-2 text-slate-900" href={github} target="_blank">
-                        <Icon class="size-6" name="bi:github" />
+                    {github && (
+                      <a class="bg-yellow rounded-full p-1 hover:scale-105 ease-in-out text-slate-900" href={github} target="_blank">
+                        <Icon class="size-5" name="bi:github" />
                       </a>
                     )}
                   </div>

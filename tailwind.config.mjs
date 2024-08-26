@@ -14,7 +14,7 @@ module.exports = {
 		extend: {
 			colors: {
 			light: 'rgb(var(--blanco) / <alpha-value>)',
-      dark: 'rgb(var(--negomorado) / <alpha-value>)',
+      dark: 'rgb(var(--negro) / <alpha-value>)',
       red: 'rgb(var(--rojo) / <alpha-value>)',
       lightred: 'rgb(var(--rojo-tenue) / <alpha-value>)',
       yellow: 'rgb(var(--amarillo) / <alpha-value>)',

@@ -1169,8 +1169,27 @@ proyects
 */
 
 .proyects {
+  &__card{
+    background-color: $color__base--negro;
+  }
    h3{
     @include parrafo($tipo__titulos, clamp(1.9em, 5vw, 2.5em), 900, $color__blanco);
     margin-bottom: 0.5rem;
+  }
+  header{
+    h2 {
+      @include parrafo($tipo__titulos, clamp(1.6em, 1.7vw, 1.7em), 900, $color__blanco);
+      text-transform: uppercase;
+    }
+    h4{
+      @include parrafo($tipo__titulos, clamp(1em, 1.1vw, 1.2em), 400, $color__blanco);
+      margin-bottom: 0.5rem;
+    }
+  }
+  footer{
+    p{
+      @include parrafo($tipo__textos, 1rem, 400, $color__blanco);
+    }
+
   }
 }

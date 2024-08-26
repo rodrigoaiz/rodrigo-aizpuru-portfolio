@@ -135,11 +135,16 @@
   ],
   "proyects": [
     {
-      "title": "Proyecto 1",
+      "title": "SuMate",
+      "client": "UNAM - CCH",
       "skills": [
         {
-          "skill": "HTML5",
-          "icon": "simple-icons:html5"
+          "skill": "Astro",
+          "icon": "simple-icons:astro"
+        },
+        {
+          "skill": "Tailwind",
+          "icon": "simple-icons:tailwindcss"
         },
         {
           "skill": "CSS3",
@@ -150,14 +155,98 @@
           "icon": "simple-icons:javascript"
         }
       ],
-      "description": "Descripción del proyecto 1",
-      "image": "https://picsum.photos/200",
-      "url": "https://www.google.com",
-      "github": "https://www.github.com",
-      "slug" : "proyectos/proyecto-1"
+      "description": "SuMate es un proyecto de la CCH con objetos de aprendizaje para la enseñanza de las matemáticas en bachillerato. El proyecto incluye videos, animaciones, ejercicios interactivos.",
+      "github": "https://github.com/unampacch/objetos-matematicas/",
+      "image": "/works/portada-sumate.webp",
+      "url": "https://vercel.com/rodrigoaizs-projects/objetos-matematicas",
+      "slug" : "proyectos/sumate"
     },
     {
-      "title": "Proyecto 2",
+      "title": "Portal Académico CCH",
+      "client": "UNAM - CCH",
+      "skills": [
+        {
+          "skill": "HTML5",
+          "icon": "simple-icons:html5"
+        },
+        {
+          "skill": "CSS3",
+          "icon": "simple-icons:css3"
+        },
+        {
+          "skill": "JavaScript",
+          "icon": "simple-icons:javascript"
+        },
+        {
+          "skill": "Bootstrap",
+          "icon": "simple-icons:bootstrap"
+        }
+      ],
+      "description": "Portal educativo del Colegio de Ciencias y Humanidades de la UNAM, diseñado para difundir recursos de aprendizaje de las principales asignaturas del Colegio como apoyo en la preparación de alumnos a nivel bachillerato de todo el mundo de habla hispana.",
+      "github": null,
+      "image": "/works/portada-portal.webp",
+      "url": "https://portalacademico.cch.unam.mx/",
+      "slug" : "proyectos/portal-academico-cch"
+    },
+    {
+      "title": "Programas de estudio PEL",
+      "client": "UNAM - CCH",
+      "skills": [
+        {
+          "skill": "Moodle",
+          "icon": "simple-icons:moodle"
+        },
+        {
+          "skill": "HTML5",
+          "icon": "simple-icons:html5"
+        },
+        {
+          "skill": "CSS3",
+          "icon": "simple-icons:css3"
+        },
+        {
+          "skill": "JavaScript",
+          "icon": "simple-icons:javascript"
+        },
+        {
+          "skill": "Bootstrap",
+          "icon": "simple-icons:bootstrap"
+        }
+      ],
+      "description": "Portal de enseñanza en línea con los programas de estudio de las asignaturas del Colegio como apoyo en la preparación de alumnos a nivel bachillerato.",
+      "image": "/works/portada-pel.webp",
+      "url": "https://pel.cch.unam.mx/",
+      "slug" : "proyectos/programas-de-estudio-pel"
+    },
+    {
+      "title": "Linio landing aniversario 2024",
+      "client": "Linio - Falabella",
+      "skills": [
+        {
+          "skill": "HTML5",
+          "icon": "simple-icons:html5"
+        },
+        {
+          "skill": "CSS3",
+          "icon": "simple-icons:css3"
+        },
+        {
+          "skill": "JavaScript",
+          "icon": "simple-icons:javascript"
+        },
+        {
+          "skill": "Bootstrap",
+          "icon": "simple-icons:bootstrap"
+        }
+      ],
+      "description": "Landing page para la campaña de aniversario de Linio en 2024.",
+      "image": "/works/portada-linio.webp",
+      "github": "https://github.com/rodrigoaiz/linio-landing-aniversario-2023",
+      "slug" : "proyectos/linio-landing-aniversario-2024"
+    },
+    {
+      "title": "México el país de las maravillas",
+      "client": "Gobierno de México - CONABIO",
       "skills": [
         {
           "skill": "HTML5",
@@ -172,11 +261,104 @@
           "icon": "simple-icons:javascript"
         }
       ],
-      "description": "Descripción del proyecto 2",
-      "image": "https://picsum.photos/200",
-      "url": "https://www.google.com",
-      "github": "https://www.github.com",
-      "slug" : "proyectos/proyecto-2"
+      "description": "Rediseño y desarrollo web para la difusión de la biodiversidad de México, con el objetivo de fomentar la conciencia ecológica y la conservación de la naturaleza con un enfoque especial para niños.",
+      "image": "/works/portada-megadiverso.webp",
+      "github": null,
+      "url": "https://www.paismaravillas.mx/index.html",
+      "slug" : "proyectos/mexico-el-pais-de-las-maravillas"
+    },
+    {
+      "title": "Tutorial de estragegias de aprendizaje",
+      "client": "UNAM - CCH",
+      "skills": [
+        {
+          "skill": "HTML5",
+          "icon": "simple-icons:html5"
+        },
+        {
+          "skill": "CSS3",
+          "icon": "simple-icons:css3"
+        },
+        {
+          "skill": "JavaScript",
+          "icon": "simple-icons:javascript"
+        },
+        {
+          "skill": "Bootstrap",
+          "icon": "simple-icons:bootstrap"
+        }
+      ],
+      "description": "Tutorial interactivo para la enseñanza de estrategias de aprendizaje principalmente dirigido a alumnos de nuevo ingreso al CCH de la UNAM haciendo enfoque en la enseñanza de su modelo educativo.",
+      "image": "/works/portada-tea.webp",
+      "url": "https://tutorial.cch.unam.mx/"
+    },
+    {
+      "title": "Herramientas TIC",
+      "client": "UNAM - CCH",
+      "skills": [
+        {
+          "skill": "HTML5",
+          "icon": "simple-icons:html5"
+        },
+        {
+          "skill": "CSS3",
+          "icon": "simple-icons:css3"
+        },
+        {
+          "skill": "JavaScript",
+          "icon": "simple-icons:javascript"
+        },
+        {
+          "skill": "Bootstrap",
+          "icon": "simple-icons:bootstrap"
+        }
+      ],
+      "description": "Herramientas TIC es un proyecto de la UNAM para la enseñanza de las tecnologías de la información y la comunicación en bachillerato.",
+      "image": "/works/portada-tic.webp",
+      "url": "https://herramientastic.cch.unam.mx/",
+      "slug" : "proyectos/herramientas-tic"
+    },
+    {
+      "title": "UNILA en línea",
+      "client": "Universidad Latina",
+      "skills": [
+        {
+          "skill": "Moodle",
+          "icon": "simple-icons:moodle"
+        },
+        {
+          "skill": "HTML5",
+          "icon": "simple-icons:html5"
+        },
+        {
+          "skill": "CSS3",
+          "icon": "simple-icons:css3"
+        },
+        {
+          "skill": "JavaScript",
+          "icon": "simple-icons:javascript"
+        },
+        {
+          "skill": "Bootstrap",
+          "icon": "simple-icons:bootstrap"
+        }
+      ],
+      "description": "Desarrollo de la plataforma de educación en línea de la Universidad Latina.",
+      "image": "/works/portada-unila.webp",
+      "url": "https://www.unila.edu.mx/",
+      "slug" : "proyectos/unila-en-linea"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Video 1",
+      "description": "Descripción del video 1",
+      "url": "https://www.youtube.com/watch?v=1"
+    },
+    {
+      "title": "Video 2",
+      "description": "Descripción del video 2",
+      "url": "https://www.youtube.com/watch?v=2"
     }
   ]
 }
