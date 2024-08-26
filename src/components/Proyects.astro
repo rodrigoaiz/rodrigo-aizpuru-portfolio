@@ -1,0 +1,61 @@
+---
+interface Proyects {
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+  github: string;
+  slug: string;
+}
+import { proyects } from '@cv';
+import { Icon } from "astro-icon/components";
+---
+<section class="proyects max-w-screen-xl mx-auto p-2" id="proyects">
+  <h3 class="uppercase text-pretty">Proyectos</h3>
+  <div class="grid xl:grid-cols-2 gap-4">
+    {
+      proyects.map(
+        ({ title, description, image, url, github, slug, skills }) => {
+          return (
+            <article class="grid grid-cols-3 gap-5">
+              <aside>
+                <img src={image} class="w-full" alt={title} />
+              </aside>
+              <div class="col-span-2">
+                <header>
+                <h2>{title}</h2>
+                </header>
+                <footer>
+                <div class="skills flex gap-2 mt-2">
+                  {skills.map(({ skill, icon}: { skill: string, icon: string }) => {
+                    return (
+                    <article class="rounded-full flex flex-row items-center justify-center border border-dark px-3 xl:py-1 gap-1 text-dark hover:scale-105  animate-ease">
+                      <Icon class="xl:size-5" name={icon} /><span>{skill}</span>
+                    </article>
+                            );
+                        }
+                      )
+                    }
+                </div>
+                  <p>{description}</p>
+                  <div class="flex gap-2">
+                    {url && (
+                      <a class="bg-yellow rounded-full p-2 text-slate-900" href={url} target="_blank">
+                        <Icon class="size-6" name="bi:link-45deg" />
+                      </a>
+                    )}
+                    {url && (
+                      <a class="bg-yellow rounded-full p-2 text-slate-900" href={github} target="_blank">
+                        <Icon class="size-6" name="bi:github" />
+                      </a>
+                    )}
+                  </div>
+                </footer>
+              </div>
+            </article>
+          );
+        }
+      )
+    }
+  </div>
+</section>

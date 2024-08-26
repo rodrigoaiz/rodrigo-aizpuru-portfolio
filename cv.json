@@ -126,5 +126,57 @@
       "skill": "Figma",
       "icon": "simple-icons:figma"
     }
+  ],
+  "education": [
+    {
+      "title": "Maestría en Diseño y Comunicación Visual",
+      "institution": "UNAM - FAD"
+    }
+  ],
+  "proyects": [
+    {
+      "title": "Proyecto 1",
+      "skills": [
+        {
+          "skill": "HTML5",
+          "icon": "simple-icons:html5"
+        },
+        {
+          "skill": "CSS3",
+          "icon": "simple-icons:css3"
+        },
+        {
+          "skill": "JavaScript",
+          "icon": "simple-icons:javascript"
+        }
+      ],
+      "description": "Descripción del proyecto 1",
+      "image": "https://picsum.photos/200",
+      "url": "https://www.google.com",
+      "github": "https://www.github.com",
+      "slug" : "proyectos/proyecto-1"
+    },
+    {
+      "title": "Proyecto 2",
+      "skills": [
+        {
+          "skill": "HTML5",
+          "icon": "simple-icons:html5"
+        },
+        {
+          "skill": "CSS3",
+          "icon": "simple-icons:css3"
+        },
+        {
+          "skill": "JavaScript",
+          "icon": "simple-icons:javascript"
+        }
+      ],
+      "description": "Descripción del proyecto 2",
+      "image": "https://picsum.photos/200",
+      "url": "https://www.google.com",
+      "github": "https://www.github.com",
+      "slug" : "proyectos/proyecto-2"
+    }
   ]
 }
