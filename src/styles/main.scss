@@ -329,8 +329,8 @@ FONDO CIRCULOS
 }
 .fondo-down{
  // transition: all ease 1s;
-      background: linear-gradient(111.6deg,  rgba(193,145,103,0.81) -0.5%, rgba(84,20,80,0.76) 50.9%, rgba(8,52,70,0.85) 100%), url('../assets/noise.svg');
-    filter: contrast(200%) brightness(200%);
+      background: linear-gradient(111.6deg,  rgba(193,145,103,0.81) -0.5%, rgba(84,20,80,0.76) 50.9%, rgba(8,52,70,0.85) 100%), url('/noise.svg');
+    filter: contrast(200%) brightness(20%);
     /*Chrome-specific*/
     @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
       .topbanner {
@@ -1071,11 +1071,19 @@ footer
     font-family: $tipo__titulos;
     font-size: 2rem;
   }
+/*
+**************************************************
+––––––––––––––––––––––––––––––––––––––––––––––––––
+experience
+––––––––––––––––––––––––––––––––––––––––––––––––––
+**************************************************
+*/
+
 .experience {
-    @include parrafo($tipo__textos, 1rem, 500, $color__base--negromorado);
+    @include parrafo($tipo__textos, 1rem, 500, $color__blanco);
     margin-bottom:3rem;
   &__ul{
-    border-left: 1px solid $color__base--negromorado;
+    border-left: 1px solid $color__azul;
     list-style: none;
     counter-reset: item;
 
@@ -1086,13 +1094,16 @@ footer
       counter-increment: item;
       margin-bottom: 2rem;
       align-items: center;
-      padding-left: 3rem;
+      padding-left: 2rem;
+      @include media(800px){
+        padding-left: 1rem;
+      }
 
     }
     &__li::before {
         position: absolute;
         left: -0.5rem;
-        background : $color__base--negromorado;
+        background : $color__amarillo;
         border-radius: 100%;
         min-width: 2rem;
         min-height: 2rem;
@@ -1110,8 +1121,10 @@ footer
   }
 
   h3{
-    @include parrafo($tipo__titulos, 2.5rem, 900, $color__base--negromorado);
+    @include parrafo($tipo__titulos, clamp(1.9em, 5vw, 2.5em), 900, $color__blanco);
+    margin-bottom: 0.5rem;
   }
+
   footer{
     ul{
       list-style: disc;
@@ -1127,6 +1140,21 @@ footer
 
   }
   h4{
-    @include parrafo($tipo__titulos, 1.5rem, 900, $color__base--negromorado);
+    @include parrafo($tipo__titulos,  clamp(1.3em, 2vw, 2em), 900, $color__blanco);
+  }
+}
+
+/*
+**************************************************
+––––––––––––––––––––––––––––––––––––––––––––––––––
+habilidades
+––––––––––––––––––––––––––––––––––––––––––––––––––
+**************************************************
+*/
+
+.habilidades {
+   h3{
+    @include parrafo($tipo__titulos, clamp(1.9em, 5vw, 2.5em), 900, $color__blanco);
+    margin-bottom: 0.5rem;
   }
 }

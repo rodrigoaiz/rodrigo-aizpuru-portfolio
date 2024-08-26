@@ -10,8 +10,8 @@ interface Experience {
 import { experience } from '@cv';
 import { Icon } from "astro-icon/components";
 ---
-<section class="experience max-w-screen-xl mx-auto" id="experience">
-  <h3 class="uppercase text-pretty font-black">Experiencia laboral</h3>
+<section class="experience max-w-screen-xl mx-auto p-2" id="experience">
+  <h3 class="uppercase text-pretty">Experiencia laboral</h3>
   <ul class="experience__ul">
   {
     experience.map(
@@ -21,18 +21,21 @@ import { Icon } from "astro-icon/components";
             <article class="xl:grid xl:grid-cols-3 xl:gap-10">
               <header>
                 <div>
-                  <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center">
                     <h4>
                       {title}
                     </h4>
-                    <a class="bg-yellow rounded-full p-2" href={url} target="_blank">
+                    {url ? (
+                      <a class="bg-yellow rounded-full p-2 text-slate-900" href={url} target="_blank">
                       <Icon class="size-6" name="bi:link-45deg" />
-                    </a>
+                      </a>
+                    ) : (
+                      <div class="hidden"></div>
+                    )}
                   </div>
-                  <h5>{type}</h5>
-                  <h6>{company}</h6>
+                  <h5 class="xl:text-xl font-semibold">{type}</h5>
+                  <h6 class="xl:text-lg">{company}</h6>
                 </div>
-
                 <div>
                   {date}
                 </div>

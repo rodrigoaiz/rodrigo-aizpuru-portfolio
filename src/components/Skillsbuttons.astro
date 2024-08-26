@@ -1,0 +1,14 @@
+---
+interface Props {
+  icono?: string;
+  nombre?: string;
+  href?: string;
+}
+import { Icon } from "astro-icon/components";
+const { icono , nombre, href } = Astro.props as Props;
+---
+<a href={href} target="_blank">
+  <article class="rounded-full flex flex-row items-center justify-center border border-dark px-3 xl:py-1 gap-1 text-dark hover:scale-105  animate-ease">
+    <Icon class="xl:size-5" name={icono} /><span>{nombre}</span>
+  </article>
+</a>

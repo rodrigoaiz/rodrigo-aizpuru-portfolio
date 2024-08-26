@@ -56,5 +56,75 @@
         ]
       }
     }
+  ],
+  "skills":[
+    {
+      "skill": "HTML5",
+      "icon": "simple-icons:html5"
+    },
+    {
+      "skill": "CSS3",
+      "icon": "simple-icons:css3"
+    },
+    {
+      "skill": "JavaScript",
+      "icon": "simple-icons:javascript"
+    },
+    {
+      "skill": "Astro",
+      "icon": "simple-icons:astro"
+    },
+    {
+      "skill": "Tailwind",
+      "icon": "simple-icons:tailwindcss"
+    },
+    {
+      "skill": "Bootstrap",
+      "icon": "simple-icons:bootstrap"
+    },
+    {
+      "skill": "Sass",
+      "icon": "simple-icons:sass"
+    },
+    {
+      "skill": "GitHub",
+      "icon": "simple-icons:github"
+    },
+    {
+      "skill": "Moodle",
+      "icon": "simple-icons:moodle"
+    },
+    {
+      "skill": "WordPress",
+      "icon": "simple-icons:wordpress"
+    },
+    {
+      "skill": "Illustrator",
+      "icon": "simple-icons:adobeillustrator"
+    },
+    {
+      "skill": "Photoshop",
+      "icon": "simple-icons:adobephotoshop"
+    },
+    {
+      "skill": "Premiere",
+      "icon": "simple-icons:adobepremierepro"
+    },
+    {
+      "skill": "After Effects",
+      "icon": "simple-icons:adobeaftereffects"
+    },
+    {
+      "skill": "Blender",
+      "icon": "simple-icons:blender"
+    },
+    {
+      "skill": "Audition",
+      "icon": "simple-icons:adobeaudition"
+    },
+    {
+      "skill": "Figma",
+      "icon": "simple-icons:figma"
+    }
   ]
 }
