@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
-    "@astrojs/partytown": "^2.1.1",
+    "@astrojs/partytown": "^2.1.2",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/frank-ruhl-libre": "^5.0.22",
     "@fontsource-variable/work-sans": "^5.0.20",
