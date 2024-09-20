@@ -2,16 +2,18 @@
 import "../styles/main.scss";
 
 export interface Props {
-  title: string;
+  title?: string;
   description: string;
   image?: string;
   ogType?: string;
+  url?: string;
 }
 
 const {
   title,
   description,
   image,
+  url,
   ogType = "website",
 } = Astro.props;
 ---
@@ -38,7 +40,7 @@ const {
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={ogType} />
-<meta property="og:url" content={Astro.url} />
+<meta property="og:url" content={url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={image} />
