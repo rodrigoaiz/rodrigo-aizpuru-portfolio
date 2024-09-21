@@ -6,4 +6,4 @@ export const SITE_DESCRIPTION = 'Rodrigo Aizpuru is a Frontend Developer & Desig
 export const SITE_URL = 'https://rodrigoaizpuru.com';
 export const GENERATE_SLUG_FROM_TITLE = true
 export const TRANSITION_API = true
-export const IMAGE_OG = '/social_img.jpg'
+export const IMAGE_OG = 'https://www.rodrigoaizpuru.com/social_img.jpg'
