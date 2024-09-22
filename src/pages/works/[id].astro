@@ -1,0 +1,77 @@
+---
+import { getCollection, render } from "astro:content";
+import LayoutWorks from "@/layouts/LayoutWorks.astro";
+import LightBox from "@/components/LightBox.astro";
+import Fondo from "@/components/Fondo.astro";
+import Redes from "@/components/Redes.astro";
+import { Icon } from "astro-icon/components";
+export async function getStaticPaths() {
+  const works = await getCollection("works");
+
+  return works.map((work) => ({
+    params: { id: work.slug },
+    props: { work }
+  }))
+}
+const { work } = Astro.props;
+const { data, slug } = work;
+const { title, abstract, image, url, skills, github, gallery } = data;
+const { Content } = await render(work)
+
+export const prerender = true
+---
+<LayoutWorks title={title}>
+  <Redes />
+  <Fondo />
+  <LightBox />
+  <main class="min-h-dvh flex items-center">
+    <div class="work max-w-screen-lg mx-auto">
+      <h1>{title}</h1>
+      <div class="group"><a href={`../#${slug}`}><Icon class="inline-block " name="bi:arrow-left" /><span class="inline-block ml-1 uppercase font-bold group-hover:translate-x-2 animate-ease transition-all">Regresar</span></a></div>
+      <div class="grid grid-cols-3 gap-5 mt-3">
+        <img transition:name={`img-${slug}`} src={image} alt={title} />
+        <div class="col-span-2 p-3 bg-slate-100/70 backdrop-blur-lg rounded-xl border-slate-500">
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <h3>Información</h3>
+              <p>{abstract}</p>
+            </div>
+            <div>
+              <h3>Cliente</h3>
+              <p>{data.client}</p>
+              <h3>IT</h3>
+              <div class="flex flex-wrap gap-2">
+                {
+                  data.skills.map((skill) => (
+                    <article class="bg-violet shadow-xl text-white text-sm font-thin px-2 rounded-lg">{skill}</article>
+                  ))
+                }
+              </div>
+              <div class="flex gap-2 flex-wrap my-2">
+                {url && (
+                  <a class="bg-yellow text-sm gap-1 rounded-lg flex items-center p-1 hover:scale-105 ease-in-out text-slate-900" href={url} target="_blank">
+                    Link <Icon class="size-5" name="bi:link-45deg" />
+                  </a>
+                )}
+                {github && (
+                  <a class="bg-yellow text-sm gap-1 rounded-lg flex items-center p-1  p-1 hover:scale-105 ease-in-out text-slate-900" href={github} target="_blank">
+                    Repositorio <Icon class="size-5" name="bi:github" />
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Content />
+      <div class="grid grid-cols-3 gap-5 mt-3 max-h-48 overflow-hidden">
+        {
+          gallery ? gallery.map((img) => (
+            <div class="zoom-in" data-lightbox="true">
+              <img src={img} alt={title} />
+            </div>
+          )) : null
+        }
+    </div>
+  </main>
+</LayoutWorks>

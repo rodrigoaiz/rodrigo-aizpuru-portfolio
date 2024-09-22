@@ -12,7 +12,7 @@ export default defineConfig({
     }
   }), icon({
     include: {
-      bi: ['facebook', 'twitter-x', 'youtube', 'instagram', 'linkedin', 'github', 'behance','envelope-paper-heart','file-earmark-arrow-down', 'box-arrow-in-right', 'link-45deg'],
+      bi: ['facebook', 'twitter-x', 'youtube', 'instagram', 'linkedin', 'github', 'behance','envelope-paper-heart','file-earmark-arrow-down', 'box-arrow-in-right', 'arrow-left', 'link-45deg'],
       simple: ['astro', 'css3', 'javascript', 'html5', 'tailwindcss', 'bootstrap', 'sass', 'github', 'figma', 'adobephotoshop', 'adobepremierepro', 'adobeillustrator', 'adobeaftereffects', 'adobeaudition', 'blender', 'moodle']
     }
   })]

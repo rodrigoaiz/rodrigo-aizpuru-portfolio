@@ -1226,3 +1226,56 @@ videos
 
   }
 }
+
+.work{
+  h1{
+    @include parrafo($tipo__titulos, clamp(1.9em, 5vw, 2.5em), 900, $color__blanco);
+  }
+  h3
+  {
+    @include parrafo($tipo__titulos, clamp(1.3em, 2vw, 2em), 600, $color__base--negromorado);
+  }
+}
+
+
+.app-lightbox {
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  cursor: zoom-out;
+  background-color: var(--bg-color, hsl(0, 0%, 0%, 0.85));
+  opacity: 0;
+  transition: opacity 0.35s;
+
+  &.is-active {
+    pointer-events: initial;
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  cursor: zoom-in;
+}
+
+.portal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(0.2);
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .is-active & {
+    transform: scale(1);
+  }
+}

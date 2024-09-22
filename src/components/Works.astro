@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+const works = await getCollection('works');
+import { Icon } from "astro-icon/components";
+import skillIcons from '@/config/iconConfig.ts';
+import { skills } from '@/config/skillsConfig.ts';
+
+const skillsWithIcons = skills.map(skill => ({
+  ...skill,
+  icon: skillIcons[skill.skill] || 'default-icon'
+}));
+---
+<section class="proyects max-w-screen-2xl mx-auto p-2">
+  <h3 class="uppercase text-pretty">Proyectos</h3>
+  <div class="grid xl:grid-cols-2 gap-4">
+    {
+      works.map((work) => {
+        const {data, slug } = work;
+        const { title, abstract, image, skills, client, url, github } = data;
+        return (
+
+        <article id={slug} class="proyects__card grid grid-cols-3 gap-3 rounded-xl overflow-hidden border border-slate-900 shadow-xl group relative pr-2" >
+          <aside class="overflow-hidden">
+            <a href={`/works/${slug}`}>
+              <img
+                transition:name={`img-${slug}`}
+                class="transition-scale  bottom-0 left-0 top-0 -z-10 h-full object-cover opacity-90 duration-1000 ease-in-out
+              group-hover:scale-110 md:w-full"
+                src={image}
+                alt={title}
+              />
+            </a>
+          </aside>
+          <div class="col-span-2 py-2">
+            <header>
+              <h2>{title}</h2>
+              <h4>{client}</h4>
+            </header>
+            <footer>
+              <p>{abstract}</p>
+              <div class="skills flex flex-wrap gap-2 my-2">
+                {skills.map((skill:string) => {
+                  const skillData = skillsWithIcons.find(s => s.skill === skill);
+                  if (!skillData) return null;
+                  return (
+                    <article class="rounded-full flex flex-row items-center justify-center border px-2 gap-1 text-slate-500 bg-slate-200 hover:scale-105  animate-ease text-xs">
+                      <Icon class="size-3" name={skillData.icon} /><span class="hidden sm:block">{skillData.skill}</span>
+                    </article>
+                  );
+                })}
+              </div>
+              <div class="flex gap-2 my-2">
+                {url && (
+                  <a class="bg-yellow rounded-full p-1 hover:scale-105 ease-in-out text-slate-900" href={url} target="_blank">
+                    <Icon class="size-5" name="bi:link-45deg" />
+                  </a>
+                )}
+                {github && (
+                  <a class="bg-yellow rounded-full p-1 hover:scale-105 ease-in-out text-slate-900" href={github} target="_blank">
+                    <Icon class="size-5" name="bi:github" />
+                  </a>
+                )}
+              </div>
+            </footer>
+          </div>
+        </article>
+        );
+      })
+    }
+  </div>
+</section>
