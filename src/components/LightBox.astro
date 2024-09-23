@@ -2,51 +2,62 @@
   <div class="portal"></div>
 </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-    function initLightbox() {
-      const lbTriggers = document.querySelectorAll('[data-lightbox="true"]');
-      const lightbox = document.querySelector('.app-lightbox');
-      const portal = lightbox?.querySelector('.portal');
+<script is:inline>
+  (function() {
+    const lbTriggers = document.querySelectorAll('[data-lightbox="true"]');
+    const lightbox = document.querySelector('.app-lightbox');
+    const portal = lightbox?.querySelector('.portal');
+    let currentIndex = 0;
 
-      for (const trig of lbTriggers) {
+    const showImage = (index) => {
+      if (portal) {
+        portal.innerHTML = lbTriggers[index].innerHTML;
+        setTimeout(() => {
+          const img = portal?.querySelectorAll('img')[0];
+          const ratio = (img?.naturalWidth ?? 0) / (img?.naturalHeight ?? 1);
+
+          if (img) {
+            img.sizes = `${window.innerHeight * ratio}px`;
+          }
+        }, 352);
+
+        if (lightbox) {
+          lightbox.classList.add('is-active');
+        }
+        document.documentElement.classList.add('scrollIsLocked');
+      }
+    };
+
+    if (portal) {
+      for (const [index, trig] of lbTriggers.entries()) {
         trig.addEventListener('click', () => {
-          if (portal) {
-            portal.innerHTML = trig.innerHTML;
-          }
-
-          setTimeout(() => {
-            const img = portal?.querySelectorAll('img')[0];
-            const ratio = (img?.naturalWidth ?? 0) / (img?.naturalHeight ?? 1);
-
-            if (img) {
-              img.sizes = `${window.innerHeight * ratio}px`;
-            }
-          }, 352);
-
-          if (lightbox) {
-            lightbox.classList.add('is-active');
-          }
-          document.documentElement.classList.add('scrollIsLocked');
+          currentIndex = index;
+          portal.classList.add('active');
+          showImage(currentIndex);
         });
       }
-
-      if (lightbox) {
-        lightbox.addEventListener('click', () => {
-          lightbox.classList.remove('is-active');
-          document.documentElement.classList.remove('scrollIsLocked');
-        });
-
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') {
-            lightbox.classList.remove('is-active');
-            document.documentElement.classList.remove('scrollIsLocked');
-          }
-        });
-      }
+    } else {
+      console.error('Portal element not found');
     }
 
-    // Inicializa el Lightbox cuando se carga la página
-    initLightbox();
-  });
+    if (lightbox) {
+      lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('is-active');
+        document.documentElement.classList.remove('scrollIsLocked');
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('is-active')) {
+          lightbox.classList.remove('is-active');
+          document.documentElement.classList.remove('scrollIsLocked');
+        } else if (e.key === 'ArrowRight' && lightbox.classList.contains('is-active')) {
+          currentIndex = (currentIndex + 1) % lbTriggers.length;
+          showImage(currentIndex);
+        } else if (e.key === 'ArrowLeft' && lightbox.classList.contains('is-active')) {
+          currentIndex = (currentIndex - 1 + lbTriggers.length) % lbTriggers.length;
+          showImage(currentIndex);
+        }
+      });
+    }
+  })();
 </script>
