@@ -23,14 +23,14 @@ const { Content } = await render(work)
   <Redes />
   <Fondo />
   <main class="min-h-dvh flex items-center">
-    <div class="max-w-screen-xl mx-auto px-1">
-      <div class="group mb-2"><a href={`../#${slug}`}><Icon class="inline-block " name="bi:arrow-left" /><span class="inline-block ml-1 uppercase font-bold group-hover:translate-x-2 animate-ease transition-all">Regresar</span></a></div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-y-2 xl:gap-x-5 mt-3 items-center">
+    <div class="max-w-screen-xl mx-auto px-1 mt-1">
+      <div class="group mb-2 text-white flex"><a href={`../#${slug}`}><Icon class="inline-block self-center size-6" name="bi:arrow-left" /><span class="inline-block ml-2 uppercase font-medium group-hover:translate-x-2 animate-ease transition-all"><span class="ring-2 ring-dark ring-offset-1 rounded-xl px-3 bg-dark/75">Regresar</span></a></span></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-y-2 md:gap-x-5 mt-3 items-center">
         <img class="min-w-full" transition:name={`img-${slug}`} src={image} alt={title} />
-        <div class="col-span-2 p-3 bg-slate-100/70 backdrop-blur-lg rounded-xl border-slate-500">
-          <div class="grid xl:grid-cols-2 gap-6">
-            <div>
-              <h1 class="text-2xl text-pretty uppercase font-black">{title}</h1>
+        <div class="col-span-2 p-3 xl:pl-10 bg-slate-100/70 backdrop-blur-sm rounded-l-xl border-slate-500">
+          <div class="grid xl:grid-cols-3 xl:gap-x-8">
+            <div class="xl:col-span-2">
+              <h1 class="xl:text-3xl text-2xl text-pretty uppercase font-black border-b border-dashed border-b-dark mb-2 text-dark">{title}</h1>
               <h3 class="text-xl xl:text-2xl font-bold">Resumen</h3>
               <p>{abstract}</p>
             </div>

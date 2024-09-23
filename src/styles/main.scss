@@ -23,6 +23,16 @@ $tipo__textos: 'Work Sans Variable', sans-serif;
 .fancybox__caption{
   @include parrafo($tipo__textos, 1em, 400, $color__base--negromorado);
 }
+body {
+  font-family: $tipo__textos;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  @include media(800px){
+    font-size: 0.8rem;
+  }
+}
 /* main
 .section{
   z-index: 1;
