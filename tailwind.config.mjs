@@ -1,8 +1,10 @@
 import animations from 'tailwindcss-animated'
+import typography from '@tailwindcss/typography'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	darkmode: 'class',
+	darkled: 'class',
 	theme: {
 		screens: {
       'sm': '640px',
@@ -24,7 +26,7 @@ module.exports = {
 		},
 	},
 	plugins: [
-		animations,
+		animations, typography,
 		require('flowbite/plugin')
 	],
 }

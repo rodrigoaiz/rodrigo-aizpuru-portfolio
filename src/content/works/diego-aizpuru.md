@@ -7,8 +7,13 @@ skills:
   - tailwind
   - css3
   - javascript
-image: /works/diego-aizpuru.webp
+image: /works/portada-diego-aizpuru.webp
 url: https://www.diegoaizpuru.com/
+gallery:
+  - /works/diego-aizpuru/recurso-01.webp
+  - /works/diego-aizpuru/recurso-02.webp
+  - /works/diego-aizpuru/recurso-03.webp
+  - /works/diego-aizpuru/recurso-04.webp
 ---
 
 Lorem ipsum dolor sit amet, **consectetur adipiscing elit. Phasellus faucibus accumsan mi**, vitae scelerisque odio placerat ac. Vivamus ullamcorper lacus id est fringilla, at tristique nisi scelerisque. Sed vestibulum, eros ut dapibus accumsan, lorem massa vulputate lacus, in egestas tellus quam ut libero. Aliquam tincidunt posuere nisl ut pulvinar. Sed sodales sapien vel lectus consectetur porta. Sed iaculis viverra turpis vitae sodales. Integer justo lectus, luctus vel lorem eu, scelerisque mattis nisi. Cras sodales consequat leo, vel rutrum lorem maximus eu. Nunc eu laoreet sapien. Integer nec purus imperdiet, finibus turpis et, eleifend ipsum.
