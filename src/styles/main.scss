@@ -16,16 +16,7 @@ ROOT
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 **************************************************
 */
-:root{
-  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.55);
-  --rojo: 202 22 43;
-  --rojo-tenue: 114 34 44;
-  --amarillo: 255 210 0;
-  --azul:76 118 161;
-  --purpura:133 33 81;
-  --blanco:236 235 243;
-  --negromorado:31 25 65;
-}
+
 
 $tipo__titulos: 'Frank Ruhl Libre Variable', serif;
 $tipo__textos: 'Work Sans Variable', sans-serif;
@@ -1226,17 +1217,6 @@ videos
 
   }
 }
-
-.work{
-  h1{
-    @include parrafo($tipo__titulos, clamp(1.9em, 5vw, 2.5em), 900, $color__blanco);
-  }
-  h3
-  {
-    @include parrafo($tipo__titulos, clamp(1.3em, 2vw, 2em), 600, $color__base--negromorado);
-  }
-}
-
 
 .app-lightbox {
   position: fixed;

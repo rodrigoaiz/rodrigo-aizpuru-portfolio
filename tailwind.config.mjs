@@ -16,13 +16,16 @@ module.exports = {
 		extend: {
 			colors: {
 			light: 'rgb(var(--blanco) / <alpha-value>)',
-      dark: 'rgb(var(--negro) / <alpha-value>)',
+      dark: 'rgb(var(--negromorado) / <alpha-value>)',
       red: 'rgb(var(--rojo) / <alpha-value>)',
       lightred: 'rgb(var(--rojo-tenue) / <alpha-value>)',
       yellow: 'rgb(var(--amarillo) / <alpha-value>)',
       blue: 'rgb(var(--azul) / <alpha-value>)',
       violet: 'rgb(var(--purpura) / <alpha-value>)'
-		}
+		  },
+      fontFamily: {
+        'heading':['"Frank Ruhl Libre Variable"']
+      }
 		},
 	},
 	plugins: [

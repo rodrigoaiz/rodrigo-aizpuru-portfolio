@@ -1,5 +1,5 @@
 ---
-import "../styles/main.scss";
+import GlobalStyles from '@/components/GlobalStyles.astro';
 
 export interface Props {
   title?: string;
@@ -17,6 +17,7 @@ const {
   ogType = "website",
 } = Astro.props;
 ---
+<GlobalStyles />
 <!-- Google tag (gtag.js) -->
 <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-ES9QS7BKLV"></script>
 <script type="text/partytown">
