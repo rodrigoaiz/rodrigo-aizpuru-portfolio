@@ -1,17 +1,31 @@
 ---
-title: Sumate
+title: SuMate
 client: UNAM - CCH
-abstract: SuMate es un proyecto del CCH con objetos de aprendizaje para la enseñanza de las matemáticas en bachillerato. El proyecto incluye videos, animaciones, ejercicios interactivos.
+abstract: SuMate es un proyecto del CCH con objetos de aprendizaje para la enseñanza de las matemáticas en bachillerato.
 skills:
   - astro
   - tailwind
   - css3
   - javascript
+  - h5p
 github: https://github.com/unampacch/objetos-matematicas/
 image: /works/portada-sumate.webp
 url: https://vercel.com/rodrigoaizs-projects/objetos-matematicas
 ---
+Lideré el desarrollo de un innovador proyecto educativo enfocado en las matemáticas, donde creamos recursos de aprendizaje interactivos y accesibles.
 
-Es un proyecto educativo donde se desarrollaron recursos de aprendizaje de asignaturas del area de Matemáticas. El desarrollo web está realizado principalmente en el framework Astro, con herramientas de desarrollo como Tailwind y código Javascript para las funcionalidades de navegación y despliegue de los diferentes objetos de aprendizaje.
-Se realizó poniendo especial atención en que fuera una interfez responsiva y de fácil lectura en dispositivos móviles, atendiendo esta necesidad donde la mayoría de los usuarios consultan estos recursos a través de sus celulares.
-Además del desarrollo de la aplicación web se gestionó el trabajo colaborativo con un grupo de trabajo integrado por los mismos estudiantes del CCH que elabaroaron los objetos mediante plantillas prestablecidas.
+En este proyecto, asumí el rol de **developer** y **líder técnico**, siendo responsable de la arquitectura y el desarrollo de la plataforma educativa.
+
+Utilizando **Astro** como base, construí una aplicación web moderna y escalable, con un diseño **responsivo** y una interfaz de usuario intuitiva, gracias al uso de **Tailwind CSS** y **JavaScript**. Además, capacité a un equipo de *desarrolladores junior* para que colaboraran en la creación de los contenidos, utilizando plantillas preestablecidas y trabajando de manera eficiente en **GitHub**.
+
+Al combinar mis habilidades técnicas con mi experiencia en gestión de proyectos, logramos desarrollar una solución educativa completa y personalizada, que responde a las necesidades de los estudiantes de matemáticas.
+
+### **Características del proyecto:**
+
+* **Diseño:** Responsivo, intuitivo y enfocado en la usabilidad
+* **Colaboración:** Trabajo en equipo con estudiantes becarios y profesionistas del equipo de desarrollo
+* **Personalización:** Contenidos adaptados a las necesidades de los estudiantes
+* **Eficiencia:** Desarrollo ágil y escalable
+* **Interfaz intuitiva:** Facilita la navegación y el acceso a los contenidos.
+* **Contenidos interactivos:** Fomenta el aprendizaje activo y colaborativo.
+* **Desarrollo de habilidades:** Capacitación de estudiantes en tecnologías web.

@@ -16,12 +16,20 @@ gallery:
   - /works/tea/recurso-04.webp
   - /works/tea/recurso-05.webp
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus accumsan mi, vitae scelerisque odio placerat ac. Vivamus ullamcorper lacus id est fringilla, at tristique nisi scelerisque. Sed vestibulum, eros ut dapibus accumsan, lorem massa vulputate lacus, in egestas tellus quam ut libero. Aliquam tincidunt posuere nisl ut pulvinar. Sed sodales sapien vel lectus consectetur porta. Sed iaculis viverra turpis vitae sodales. Integer justo lectus, luctus vel lorem eu, scelerisque mattis nisi. Cras sodales consequat leo, vel rutrum lorem maximus eu. Nunc eu laoreet sapien. Integer nec purus imperdiet, finibus turpis et, eleifend ipsum.
+## **Desarrollo de un tutorial interactivo personalizado**
 
-Mauris hendrerit magna est, ut egestas augue molestie ut. Pellentesque ac leo congue, dignissim nunc tincidunt, feugiat mi. Integer tempus id justo vitae vestibulum. Etiam dignissim quam sit amet porttitor rhoncus. Nullam faucibus pharetra erat, non congue augue sollicitudin id. Integer sagittis vulputate faucibus. Donec in venenatis ante, dapibus sodales ipsum.
+Como **diseñador de interfaz**, me encargué de crear una experiencia de aprendizaje visualmente atractiva y fácil de usar para los estudiantes de bachillerato. Utilizando **HTML, CSS y Bootstrap**, desarrollé una interfaz personalizada que complementara los contenidos del tutorial, creados con **PHP y Twig**.
 
-Aenean non ante rutrum, condimentum ipsum in, imperdiet nunc. Donec nulla libero, efficitur id malesuada ultrices, fringilla gravida dolor. Sed id commodo arcu. Morbi porttitor malesuada congue. Vestibulum vulputate feugiat arcu ac pharetra. Morbi luctus egestas erat, ac vulputate felis ornare non. Praesent et porttitor lacus.
+Mi objetivo principal fue diseñar una interfaz que no solo fuera estéticamente agradable, sino también que facilitara la comprensión de los conceptos y motivara a los estudiantes a interactuar con el contenido. Para ello, me enfoqué en crear una jerarquía visual clara, utilizando elementos gráficos y tipografía adecuados, y asegurando una navegación intuitiva.
 
-Donec id porttitor leo, maximus ullamcorper neque. Morbi sit amet hendrerit ex. Curabitur sit amet ex massa. Cras malesuada fringilla pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar nulla vitae lacus semper, sit amet convallis odio imperdiet. Integer dignissim sem sed nisi aliquam auctor. Curabitur nec iaculis ante. Fusce eget urna sit amet orci accumsan cursus sed non orci. Integer consequat eu dui ac fermentum. Donec ut iaculis sapien. Nullam eleifend posuere urna, et commodo nisl condimentum vitae. Nunc hendrerit ipsum ut nibh commodo, in semper ante euismod. Nam vel fermentum est. Proin ex eros, consectetur sit amet dui eget, malesuada consectetur urna. Donec varius euismod tristique.
+Además, trabajé en estrecha colaboración con el equipo de desarrollo para integrar los videos explicativos de manera fluida en la interfaz, creando una experiencia de aprendizaje más dinámica y completa. La interfaz fue diseñada teniendo en cuenta la necesidad de ser **responsiva** y adaptarse a diferentes dispositivos, garantizando una experiencia de usuario óptima en cualquier pantalla.
 
-Donec tincidunt eget ex in hendrerit. Suspendisse nec gravida arcu. Vivamus lorem nulla, tempor sit amet turpis in, tincidunt scelerisque massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus dapibus leo velit, quis pretium metus facilisis dignissim. Aliquam tempus nisl tempus tristique pulvinar. Quisque sollicitudin consectetur nunc, et imperdiet dui viverra sit amet. In malesuada id lectus et semper. Aliquam erat volutpat. In vel facilisis libero.
+Al combinar mis habilidades de diseño con las tecnologías adecuadas, logré crear un tutorial interactivo que no solo transmite conocimientos de manera efectiva, sino que también brinda una experiencia de aprendizaje agradable y memorable para los estudiantes.
+
+### **Características del proyecto:**
+
+* **Diseño personalizado:** Interfaz visualmente atractiva y alineada con la temática del tutorial.
+* **Tecnología:** HTML, CSS, Bootstrap, PHP, Twig
+* **Responsividad:** Adaptación a diferentes dispositivos (móviles, tablets, computadoras).
+* **Interactividad:** Integración de videos y elementos interactivos.
+* **Usabilidad:** Navegación intuitiva y jerarquía visual clara.
