@@ -1,8 +1,10 @@
 # Rodrigo Aizpuru Portfolio
 
-## Front End Web Desinger
+![alt text](public/nombre-neon2.webp)
 
-> Después de clonar el repositorio ejecturar en la terminal
+## Front End Web Designer
+
+> Después de clonar el repositorio ejecutar en la terminal
 
 ```sh
 npm install
@@ -24,6 +26,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## URL DOCUMENTO OBJETOS DE APRENDIZAJE
-https://correocchunam-my.sharepoint.com/:w:/g/personal/karla_moreno_cch_unam_mx/EWU7oDjN2ldHsjGFTHcdVtUBaoaPNobyE0Hl1Ya52Y3vsw?e=sDfQ7T
