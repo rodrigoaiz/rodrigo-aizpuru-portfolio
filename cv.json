@@ -135,90 +135,6 @@
   ],
   "proyects": [
     {
-      "title": "SuMate",
-      "client": "UNAM - CCH",
-      "skills": [
-        {
-          "skill": "Astro",
-          "icon": "simple-icons:astro"
-        },
-        {
-          "skill": "Tailwind",
-          "icon": "simple-icons:tailwindcss"
-        },
-        {
-          "skill": "CSS3",
-          "icon": "simple-icons:css3"
-        },
-        {
-          "skill": "JavaScript",
-          "icon": "simple-icons:javascript"
-        }
-      ],
-      "description": "SuMate es un proyecto del CCH con objetos de aprendizaje para la enseñanza de las matemáticas en bachillerato. El proyecto incluye videos, animaciones, ejercicios interactivos.",
-      "github": "https://github.com/unampacch/objetos-matematicas/",
-      "image": "/works/portada-sumate.webp",
-      "url": "https://vercel.com/rodrigoaizs-projects/objetos-matematicas",
-      "slug" : "proyectos/sumate"
-    },
-    {
-      "title": "Portal Académico CCH",
-      "client": "UNAM - CCH",
-      "skills": [
-        {
-          "skill": "HTML5",
-          "icon": "simple-icons:html5"
-        },
-        {
-          "skill": "CSS3",
-          "icon": "simple-icons:css3"
-        },
-        {
-          "skill": "JavaScript",
-          "icon": "simple-icons:javascript"
-        },
-        {
-          "skill": "Bootstrap",
-          "icon": "simple-icons:bootstrap"
-        }
-      ],
-      "description": "Portal educativo del Colegio de Ciencias y Humanidades de la UNAM, diseñado para difundir recursos de aprendizaje de las principales asignaturas del Colegio como apoyo en la preparación de alumnos a nivel bachillerato de todo el mundo de habla hispana.",
-      "github": null,
-      "image": "/works/portada-portal.webp",
-      "url": "https://portalacademico.cch.unam.mx/",
-      "slug" : "proyectos/portal-academico-cch"
-    },
-    {
-      "title": "Programas de estudio PEL",
-      "client": "UNAM - CCH",
-      "skills": [
-        {
-          "skill": "Moodle",
-          "icon": "simple-icons:moodle"
-        },
-        {
-          "skill": "HTML5",
-          "icon": "simple-icons:html5"
-        },
-        {
-          "skill": "CSS3",
-          "icon": "simple-icons:css3"
-        },
-        {
-          "skill": "JavaScript",
-          "icon": "simple-icons:javascript"
-        },
-        {
-          "skill": "Bootstrap",
-          "icon": "simple-icons:bootstrap"
-        }
-      ],
-      "description": "Portal de enseñanza en línea con los programas de estudio de las asignaturas del Colegio como apoyo en la preparación de alumnos a nivel bachillerato.",
-      "image": "/works/portada-pel.webp",
-      "url": "https://pel.cch.unam.mx/",
-      "slug" : "proyectos/programas-de-estudio-pel"
-    },
-    {
       "title": "Linio landing aniversario 2024",
       "client": "Linio - Falabella",
       "skills": [
@@ -266,31 +182,6 @@
       "github": null,
       "url": "https://www.paismaravillas.mx/index.html",
       "slug" : "proyectos/mexico-el-pais-de-las-maravillas"
-    },
-    {
-      "title": "Tutorial de estrategias de aprendizaje",
-      "client": "UNAM - CCH",
-      "skills": [
-        {
-          "skill": "HTML5",
-          "icon": "simple-icons:html5"
-        },
-        {
-          "skill": "CSS3",
-          "icon": "simple-icons:css3"
-        },
-        {
-          "skill": "JavaScript",
-          "icon": "simple-icons:javascript"
-        },
-        {
-          "skill": "Bootstrap",
-          "icon": "simple-icons:bootstrap"
-        }
-      ],
-      "description": "Tutorial interactivo para la enseñanza de estrategias de aprendizaje, principalmente dirigido a alumnos de nuevo ingreso al CCH de la UNAM, enfocado en la enseñanza de su modelo educativo.",
-      "image": "/works/portada-tea.webp",
-      "url": "https://tutorial.cch.unam.mx/"
     },
     {
       "title": "Herramientas TIC",
