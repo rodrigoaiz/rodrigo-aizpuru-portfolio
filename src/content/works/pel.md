@@ -12,7 +12,7 @@ skills:
 image: /works/portada-pel.webp
 url: https://pel.cch.unam.mx/
 ---
-Como parte del equipo de desarrollo web, tuve la oportunidad de contribuir en la creación de un este portal de enseñanza en línea personalizado para los estudiantes de bachillerato del Colegio.
+Como parte del equipo de desarrollo web, tuve la oportunidad de contribuir en la creación de este portal de enseñanza en línea personalizado para los estudiantes de bachillerato del Colegio.
 
 Utilizando **Moodle** como LMS base, diseñamos y desarrollamos una interfaz intuitiva y fácil de usar, donde los alumnos pueden acceder a los contenidos de sus asignaturas y realizar diversas actividades de aprendizaje.
 
@@ -22,7 +22,7 @@ Gracias a esta colaboración, logramos desarrollar un entorno de aprendizaje vir
 
 ### **Resultados:**
 
-* **Mayor accesibilidad a los contenidos:** Los estudiantes podían acceder a los materiales de estudio en cualquier momento y lugar, facilitando su aprendizaje.
+* **Mayor accesibilidad a los contenidos:** Los estudiantes tienen a su alcance los materiales de estudio en cualquier momento y lugar, facilitando su aprendizaje.
 * **Actividades interactivas:** La integración de H5P permitió crear actividades dinámicas y atractivas, como cuestionarios, simulaciones y juegos, lo que motivó a los estudiantes y reforzó su aprendizaje.
 * **Seguimiento del progreso:** Moodle proporcionó herramientas para que los estudiantes pudieran monitorear su avance en cada asignatura y los docentes pudieran realizar un seguimiento personalizado.
 * **Facilitación de la acreditación:** Al ofrecer un entorno de aprendizaje completo y flexible, el portal contribuyó a que los estudiantes adquirieran las competencias necesarias para acreditar sus asignaturas.
