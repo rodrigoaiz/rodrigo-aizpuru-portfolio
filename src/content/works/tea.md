@@ -29,7 +29,7 @@ Al combinar mis habilidades de diseño con las tecnologías adecuadas, logré cr
 ### **Características del proyecto:**
 
 * **Diseño personalizado:** Interfaz visualmente atractiva y alineada con la temática del tutorial.
-* **Tecnología:** HTML, CSS, Bootstrap, PHP, Twig
+* **Tecnología:** HTML, CSS, Bootstrap, PHP, Twig.
 * **Responsividad:** Adaptación a diferentes dispositivos (móviles, tablets, computadoras).
 * **Interactividad:** Integración de videos y elementos interactivos.
 * **Usabilidad:** Navegación intuitiva y jerarquía visual clara.

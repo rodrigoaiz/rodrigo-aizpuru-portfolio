@@ -26,9 +26,9 @@ Además, me aseguré de optimizar las imágenes para una carga rápida y una exp
 ### **Características del proyecto:**
 
 * **Diseño minimalista:** Enfoque en las obras de arte, con una interfaz limpia y sencilla.
-* **Tecnología:** Astro, Tailwind CSS, CSS puro
-* **Personalización:** Interfaz de usuario adaptada a las necesidades del proyecto
-* **Gestión de contenido:** Colecciones de Astro para una organización flexible
+* **Tecnología:** Astro, Tailwind CSS, CSS.
+* **Personalización:** Interfaz de usuario adaptada a las necesidades del proyecto.
+* **Gestión de contenido:** Colecciones de Astro para una organización flexible.
 * **Catálogo digital intuitivo:** Fácil navegación y búsqueda de obras.
 * **Presentación profesional:** Destacado de las características de cada obra.
 * **Código limpio y eficiente:** Facilita el mantenimiento y futuras actualizaciones.

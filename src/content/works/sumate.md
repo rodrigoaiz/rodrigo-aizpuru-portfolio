@@ -1,7 +1,7 @@
 ---
 title: SuMate
 client: UNAM - CCH
-abstract: SuMate es un proyecto del CCH con objetos de aprendizaje para la enseñanza de las matemáticas en bachillerato.
+abstract: SuMate es un proyecto del CCH con Objetos de Aprendizaje para la enseñanza de las matemáticas en bachillerato.
 skills:
   - astro
   - tailwind
@@ -22,10 +22,10 @@ Al combinar mis habilidades técnicas con mi experiencia en gestión de proyecto
 
 ### **Características del proyecto:**
 
-* **Diseño:** Responsivo, intuitivo y enfocado en la usabilidad
-* **Colaboración:** Trabajo en equipo con estudiantes becarios y profesionistas del equipo de desarrollo
-* **Personalización:** Contenidos adaptados a las necesidades de los estudiantes
-* **Eficiencia:** Desarrollo ágil y escalable
+* **Diseño:** Responsivo, intuitivo y enfocado en la usabilidad.
+* **Colaboración:** Trabajo en equipo con estudiantes becarios y profesionistas del equipo de desarrollo.
+* **Personalización:** Contenidos adaptados a las necesidades de los estudiantes.
+* **Eficiencia:** Desarrollo ágil y escalable.
 * **Interfaz intuitiva:** Facilita la navegación y el acceso a los contenidos.
 * **Contenidos interactivos:** Fomenta el aprendizaje activo y colaborativo.
 * **Desarrollo de habilidades:** Capacitación de estudiantes en tecnologías web.
