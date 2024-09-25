@@ -17,7 +17,6 @@ const {
   ogType = "website",
 } = Astro.props;
 ---
-<GlobalStyles />
 <!-- Google tag (gtag.js) -->
 <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-ES9QS7BKLV"></script>
 <script type="text/partytown">
@@ -32,7 +31,6 @@ const {
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="canonical" href="https://www.rodrigoaizpuru.com/" />
-<meta name="generator" content={Astro.generator} />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -48,6 +46,13 @@ const {
 <meta property="og:image" content={image} />
 <meta property="og:image:url" content={image} />
 <meta property="og:image:secure_url" content={image} />
-<meta property="og:image:type" content="image/JPG" />
+<meta property="og:image:type" content="image/jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="628" />
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={image} />
+<GlobalStyles />
